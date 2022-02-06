@@ -84,7 +84,6 @@ void compile_ast (FILE *fp, unsigned long memsize,
 
   // generate assembly
   for (unsigned long i = 0; i < a->n; ++i) {
-    //printf("gen %d\n", a->c[i]);
     if (a->c[i] == C_hhhH) { // move ptr right
       int count = count_cmd(a, i);
       cg->move_ptr(fp, count);
@@ -131,8 +130,6 @@ void compile_ast (FILE *fp, unsigned long memsize,
       cg->label(fp, i);
     } else if (a->c[i] == C_BREAKPOINT) {
       cg->dbg_break(fp);
-    } else {
-      fprintf(fp, "; ooga booga\n");
     }
   }
   cg->bye(fp);
