@@ -15,8 +15,7 @@ operating systems, especially Mac OS X and other unices (e.g. FreeBSD).
 Dependencies
 ------------
 
- - a working C compiler implementing a few of gcc's extensions (most
-   modern compilers work adequately without modification of ahhhk)
+ - a C99 conformant C compiler
  - GNU make or compatible
  - xxd (present on all unices)
  - nasm (recommended)
