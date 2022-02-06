@@ -1,0 +1,38 @@
+ahhhk - A Compiler for the AHHH programming language
+
+
+ahhhk is an implementation of Kyle Morgenstein's (KyleM73) esoteric
+programming language as a static compiler.
+
+Currently, ahhhk can target x86-64 based systems, however,
+32-bit x86, aarch64 support and possibly RISC-V is planned for
+future versions.
+
+The operating systems supported by ahhhk at present are Windows and Linux,
+however, linking manually should enable compiling AHHH for other
+operating systems, especially Mac OS X and other unices (e.g. FreeBSD).
+
+Dependencies
+------------
+
+ - a working C compiler implementing a few of gcc's extensions (most
+   modern compilers work adequately without modification of ahhhk)
+ - GNU make or compatible
+ - xxd (present on all unices)
+ - nasm (recommended)
+ - ld (recommended)
+
+Building
+--------
+
+Simple: just run make
+
+Using AHHH
+----------
+
+The best explanation of how to write AHHH programmes is given by
+``README.md'' in Kyle Morgenstein's interpreter: <github.com/KyleM73/AHHH>.
+
+License
+-------
+GNU GPLv3 (see LICENCE)
